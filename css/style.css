@@ -1734,6 +1734,10 @@ select {
     background-color: rgb(255 147 0 / var(--tw-bg-opacity));
   }
 
+  .tb\:hover\:bg-opacity-15:hover {
+    --tw-bg-opacity: 0.15;
+  }
+
   .tb\:hover\:text-orange:hover {
     --tw-text-opacity: 1;
     color: rgb(255 121 0 / var(--tw-text-opacity));
