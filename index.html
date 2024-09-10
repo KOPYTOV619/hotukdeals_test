@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Hotukdeals</title> 
+  <meta name="title" content="Hotukdeals" />
+
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="./js/alpine.min.js"></script>
+</head>
+
+<body class="bg-gray-25">
+
+
+
+  
+  <main >
+  	<section>
+  		<div class="tb:container">
+  			<div class="w-full bg-white rounded-lg p-4 grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] group cursor-pointer mt-2">
+  				<div class="w-[72px] md:w-40 tb:w-48 aspect-1 row-start-2 md:row-start-1 col-start-1 md:row-end-5 md:col-start-1 overflow-hidden rounded-lg bg-gray-50 mr-4">
+  					<img src="./images/img.jpg" alt="deodorant women bottle" class="w-full  group-hover:scale-105 origin-center transition-all duration-300 ease-in-out">
+  				</div>
+  				<div class="col-start-1 col-end-4 row-start-1 md:col-start-2 md:col-end-5 flex justify-between items-center mb-4 tb:mb-2">
+  					<div x-data="{ count: 65 }" class="flex justify-center items-center gap-1 h-9 rounded-full px-1 border border-gray-75 font-averta font-bold text-[16px] text-[#e00034] ">
+  						<button @click="count--" class="w-7 h-7 rounded-full bg-gray-10 flex justify-center items-center rotate-180 tb:hover:bg-[#004b87] hover:bg-opacity-15 transition-all duration-300 ease-in-out">
+  							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24">
+  								<path class="stroke-gray-100" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 15-5.172-5.172c-1.333-1.333-2-2-2.828-2-.828 0-1.495.667-2.828 2L4 15"/>
+  							</svg>							  
+  						</button>
+  						<span x-text="count + '°'"></span>
+  						<button @click="count++" class="w-7 h-7 rounded-full bg-gray-10 flex justify-center items-center tb:hover:bg-[#bf0930] hover:bg-opacity-15 transition-all duration-300 ease-in-out">
+  							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24">
+  								<path class="stroke-gray-100" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 15-5.172-5.172c-1.333-1.333-2-2-2.828-2-.828 0-1.495.667-2.828 2L4 15"/>
+  							</svg>							  
+  						</button>
+  					</div>
+  					<div class="flex gap-1 items-center font-averta font-regular text-[14px] text-gray-50">
+  						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24">
+  							<circle cx="12" cy="12" r="9" class="stroke-gray-50" stroke-width="2"/>
+  							<path class="stroke-gray-50" stroke-linecap="round" stroke-width="2" d="M12 12V8m0 4H7"/>
+  						</svg>
+  						01/10/2024
+  					</div>
+  				</div>
+  				<div class="col-start-2 col-end-4 row-start-2 tb:col-start-2 tb:col-end-5 tb:row-start-2 w-full flex flex-col self-center">
+  					<h2 class="font-averta font-bold text-[16px] tb:text-[18px] leading-[20px] text-gray-100 tb:leading-[26px] line-clamp-2 tb:hover:text-orange transition-all duration-300 ease-in-out mb-1">Just a heads up if looking to book Eurostar train tickets, this promo will go live Tuesday via TrainPal by 9am 10th Sep to 12th September 23:59. There will be a flash sale for Eurostar train tickets from London to Brussels, Paris, Lille, Amsterdam Paris, Lille, Amsterdam</h2>
+  					<div class="flex gap-[5px] items-center mb-1">
+  						<div class="font-averta font-bold text-[20px] text-orange leading-[28px]">£0.87</div>
+  						<div class="font-averta font-regular text-[20px] text-gray-50 leading-[28px] line-through">£1.1</div>
+  						<span class="block h-[23px] w-[1px] mx-[3px] bg-gray-75"></span>
+  						<div class="font-averta font-bold text-[14px] text-orange leading-[20px] hover:underline underline-offset-2">Superdrug <span class="text-gray-50">Deals</span></div>
+  					</div>
+  				</div>
+  				<div class="col-start-1 col-end-4 row-start-4 md:col-start-2 mt-1 flex flex-col md:flex-row md:items-center md:gap-2" >
+  					<div class="relative flex items-center justify-between gap-2 grow">
+  						<div class="flex gap-1 grow items-center">
+  							<div class="w-[26px] h-[26px] bg-gray-100 rounded-full flex justify-center items-center">
+  								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
+  									<path class="stroke-white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21v-1.45c0-.977 0-1.465-.113-1.864a3 3 0 0 0-2.073-2.073c-.399-.113-.887-.113-1.864-.113h-6.9c-.977 0-1.465 0-1.864.113a3 3 0 0 0-2.073 2.073C4 18.085 4 18.573 4 19.55V21M16.2 7.06c0 2.245-1.88 4.064-4.2 4.064-2.32 0-4.2-1.82-4.2-4.064 0-2.245 1.88-4.065 4.2-4.065 2.32 0 4.2 1.82 4.2 4.065Z"/>
+  								</svg>
+  							</div>
+  							<p class="font-averta font-bold text-[14px] text-gray-100 leading-[20px]">FREE1234567890</p>
+  						</div>
+  						<div x-data="{ isActive: false }">
+  							<button :class="isActive ? 'border-orange bg-orange bg-opacity-15 hover:border-transparent' : 'border-gray-75 hover:bg-gray-10'" @click="isActive = !isActive" class="w-9 h-9 rounded-full border flex justify-center items-center transition-all duration-300 ease-in-out">
+  								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  									<path :class="isActive ? 'fill-orange stroke-orange' : 'fill-transparent stroke-gray-100'" class="stroke-gray-100" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 7v8.222c0 3.46 0 5.19.989 5.55.989.358 2.097-.971 4.314-3.628l.697-.835.697.835c2.217 2.657 3.325 3.986 4.314 3.627.989-.358.989-2.088.989-5.55V7c0-1.886 0-2.828-.586-3.414C16.828 3 15.886 3 14 3h-4c-1.886 0-2.828 0-3.414.586C6 4.172 6 5.114 6 7Z"/>
+  								</svg>							  
+  							</button>
+  						</div>
+  						<button class="h-9 px-[14px] rounded-full border border-gray-75 flex justify-center items-center gap-[7px] font-averta font-bold text-[14px] text-gray-100 hover:bg-gray-10 transition-all duration-300 ease-in-out">
+  							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+  								<path class="fill-gray-100" d="m5.292 15.647-.66.752.66-.752ZM9 17.6l.267-.963L9 17.6Zm-4.875 2.278-.47.883c.047.024.096.046.146.063l.324-.946ZM20 10.805c0 1.94-.85 3.5-2.253 4.6-1.421 1.114-3.442 1.772-5.747 1.772v2c2.666 0 5.145-.76 6.98-2.198C20.836 15.526 22 13.4 22 10.805h-2Zm-16 0c0-1.576.807-3 2.234-4.064C7.668 5.673 9.7 5 12 5V3c-2.671 0-5.138.779-6.961 2.138C3.209 6.5 2 8.479 2 10.805h2ZM12 5c2.351 0 4.381.539 5.793 1.522C19.166 7.478 20 8.879 20 10.805h2c0-2.611-1.18-4.612-3.065-5.924C17.09 3.595 14.62 3 12 3v2Zm-6.049 9.896C4.721 13.816 4 12.298 4 10.805H2c0 2.125 1.012 4.174 2.632 5.594l1.319-1.503ZM12 17.176c-.884 0-1.74-.264-2.733-.54l-.534 1.928c.883.245 2.047.613 3.267.613v-2Zm-2.733-.54c-.476-.132-.88.054-1.072.158-.218.12-.423.283-.59.425-.173.146-.362.32-.537.48-.183.165-.366.33-.556.487-.823.678-1.466.95-2.063.746l-.648 1.892c1.694.58 3.124-.387 3.983-1.095.23-.19.443-.38.629-.55.194-.176.347-.317.487-.436.145-.123.222-.176.254-.194.06-.032-.127.096-.421.015l.534-1.927Zm-4.672 2.36a.822.822 0 0 1 .379.42c.048.123.046.213.046.225 0 .018 0-.036.052-.2.099-.313.283-.735.505-1.232.206-.463.447-.997.6-1.44a3.38 3.38 0 0 0 .175-.729c.018-.175.059-.741-.401-1.144l-1.319 1.503c-.337-.295-.26-.66-.27-.56a1.607 1.607 0 0 1-.077.281c-.117.339-.312.775-.535 1.275-.208.466-.445 1-.585 1.445-.068.214-.14.488-.145.76-.005.23.039.843.635 1.16l.94-1.765ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
+  							</svg>
+  							9
+  						</button>
+  					</div>
+  					<a href="#" class=" h-9 px-[14px] rounded-full bg-orange flex justify-center items-center gap-[7px] font-averta font-bold text-[14px] text-white outline outline-white tb:hover:bg-[#ff9300] tb:hover:outline-[#ff9300] transition-all duration-500 ease-in-out mt-2 md:mt-0">
+  						Get deal*
+  						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+  							<path class="stroke-white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.636 18.364 18.364 5.636m0 0V15m0-9.364H9"/>
+  						</svg> 
+  					</a>
+  				</div>
+  			</div>
+  
+  			<div class="w-full bg-white rounded-lg p-4 grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] group cursor-pointer mt-2">
+  				<div class="w-[72px] md:w-40 tb:w-48 aspect-1 row-start-2 md:row-start-1 col-start-1 md:row-end-5 md:col-start-1 overflow-hidden rounded-lg bg-gray-50 mr-4">
+  					<img src="./images/img-2.jpg" alt="deodorant women bottle" class="w-full  group-hover:scale-105 origin-center transition-all duration-300 ease-in-out">
+  				</div>
+  				<div class="col-start-1 col-end-4 row-start-1 md:col-start-2 md:col-end-5 flex justify-between items-center mb-4 tb:mb-2">
+  					<div x-data="{ count: 124 }" class="flex justify-center items-center gap-1 h-9 rounded-full px-1 border border-gray-75 font-averta font-bold text-[16px] text-[#e00034] ">
+  						<button @click="count--" class="w-7 h-7 rounded-full bg-gray-10 flex justify-center items-center rotate-180 tb:hover:bg-[#004b87] hover:bg-opacity-15 transition-all duration-300 ease-in-out">
+  							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24">
+  								<path class="stroke-gray-100" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 15-5.172-5.172c-1.333-1.333-2-2-2.828-2-.828 0-1.495.667-2.828 2L4 15"/>
+  							</svg>							  
+  						</button>
+  						<span x-text="count + '°'"></span>
+  						<button @click="count++" class="w-7 h-7 rounded-full bg-gray-10 flex justify-center items-center tb:hover:bg-[#bf0930] hover:bg-opacity-15 transition-all duration-300 ease-in-out">
+  							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24">
+  								<path class="stroke-gray-100" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 15-5.172-5.172c-1.333-1.333-2-2-2.828-2-.828 0-1.495.667-2.828 2L4 15"/>
+  							</svg>							  
+  						</button>
+  					</div>
+  					<div class="flex gap-1 items-center font-averta font-regular text-[14px] text-gray-50">
+  						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24">
+  							<circle cx="12" cy="12" r="9" class="stroke-gray-50" stroke-width="2"/>
+  							<path class="stroke-gray-50" stroke-linecap="round" stroke-width="2" d="M12 12V8m0 4H7"/>
+  						</svg>
+  						01/10/2024
+  					</div>
+  				</div>
+  				<div class="col-start-2 col-end-4 row-start-2 tb:col-start-2 tb:col-end-5 tb:row-start-2 w-full flex flex-col self-center">
+  					<h2 class="font-averta font-bold text-[16px] tb:text-[18px] leading-[20px] text-gray-100 tb:leading-[26px] line-clamp-2 tb:hover:text-orange transition-all duration-300 ease-in-out mb-1">Just a heads up if looking to book Eurostar train tickets</h2>
+  					<div class="flex gap-[5px] items-center mb-1">
+  						<div class="font-averta font-bold text-[20px] text-orange leading-[28px]">£0.87</div>
+  						<div class="font-averta font-regular text-[20px] text-gray-50 leading-[28px] line-through">£1.1</div>
+  						<span class="block h-[23px] w-[1px] mx-[3px] bg-gray-75"></span>
+  						<div class="font-averta font-bold text-[14px] text-orange leading-[20px] hover:underline underline-offset-2">Superdrug <span class="text-gray-50">Deals</span></div>
+  					</div>
+  				</div>
+  				<p class="col-start-1 col-end-4 md:col-start-2 font-averta font-regular text-[14px] text-gray-100 leading-[20px] line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur non, id reiciendis vitae aliquam est voluptatibus quasi iure nihil repellat rerum tempore dicta quis architecto minus tenetur possimus soluta dolorem.
+  					Ratione amet dolorem doloribus iste deleniti quisquam, quibusdam quia commodi vel perspiciatis excepturi, iusto itaque inventore! Voluptas doloribus officiis, provident, quod quo eum quas, error amet et corporis repellat asperiores?
+  				</p>
+  
+  				<div class="col-start-1 col-end-4 row-start-4 md:col-start-2 mt-1 flex flex-col md:flex-row md:items-center md:gap-2" >
+  					<div class="relative flex items-center justify-between gap-2 grow">
+  						<div class="flex gap-1 grow items-center">
+  							<div class="w-[26px] h-[26px] bg-orange rounded-full flex justify-center items-center">
+  								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
+  									<path class="stroke-white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21v-1.45c0-.977 0-1.465-.113-1.864a3 3 0 0 0-2.073-2.073c-.399-.113-.887-.113-1.864-.113h-6.9c-.977 0-1.465 0-1.864.113a3 3 0 0 0-2.073 2.073C4 18.085 4 18.573 4 19.55V21M16.2 7.06c0 2.245-1.88 4.064-4.2 4.064-2.32 0-4.2-1.82-4.2-4.064 0-2.245 1.88-4.065 4.2-4.065 2.32 0 4.2 1.82 4.2 4.065Z"/>
+  								</svg>
+  							</div>
+  							<p class="font-averta font-bold text-[14px] text-gray-100 leading-[20px]">NuffinisFree</p>
+  						</div>
+  						<div x-data="{ isActive: false }">
+  							<button :class="isActive ? 'border-orange bg-orange bg-opacity-15 hover:border-transparent' : 'border-gray-75 hover:bg-gray-10'" @click="isActive = !isActive" class="w-9 h-9 rounded-full border flex justify-center items-center transition-all duration-300 ease-in-out">
+  								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  									<path :class="isActive ? 'fill-orange stroke-orange' : 'fill-transparent stroke-gray-100'" class="stroke-gray-100" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 7v8.222c0 3.46 0 5.19.989 5.55.989.358 2.097-.971 4.314-3.628l.697-.835.697.835c2.217 2.657 3.325 3.986 4.314 3.627.989-.358.989-2.088.989-5.55V7c0-1.886 0-2.828-.586-3.414C16.828 3 15.886 3 14 3h-4c-1.886 0-2.828 0-3.414.586C6 4.172 6 5.114 6 7Z"/>
+  								</svg>							  
+  							</button>
+  						</div>
+  						<button class="h-9 px-[14px] rounded-full border border-gray-75 flex justify-center items-center gap-[7px] font-averta font-bold text-[14px] text-gray-100 hover:bg-gray-10 transition-all duration-300 ease-in-out">
+  							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+  								<path class="fill-gray-100" d="m5.292 15.647-.66.752.66-.752ZM9 17.6l.267-.963L9 17.6Zm-4.875 2.278-.47.883c.047.024.096.046.146.063l.324-.946ZM20 10.805c0 1.94-.85 3.5-2.253 4.6-1.421 1.114-3.442 1.772-5.747 1.772v2c2.666 0 5.145-.76 6.98-2.198C20.836 15.526 22 13.4 22 10.805h-2Zm-16 0c0-1.576.807-3 2.234-4.064C7.668 5.673 9.7 5 12 5V3c-2.671 0-5.138.779-6.961 2.138C3.209 6.5 2 8.479 2 10.805h2ZM12 5c2.351 0 4.381.539 5.793 1.522C19.166 7.478 20 8.879 20 10.805h2c0-2.611-1.18-4.612-3.065-5.924C17.09 3.595 14.62 3 12 3v2Zm-6.049 9.896C4.721 13.816 4 12.298 4 10.805H2c0 2.125 1.012 4.174 2.632 5.594l1.319-1.503ZM12 17.176c-.884 0-1.74-.264-2.733-.54l-.534 1.928c.883.245 2.047.613 3.267.613v-2Zm-2.733-.54c-.476-.132-.88.054-1.072.158-.218.12-.423.283-.59.425-.173.146-.362.32-.537.48-.183.165-.366.33-.556.487-.823.678-1.466.95-2.063.746l-.648 1.892c1.694.58 3.124-.387 3.983-1.095.23-.19.443-.38.629-.55.194-.176.347-.317.487-.436.145-.123.222-.176.254-.194.06-.032-.127.096-.421.015l.534-1.927Zm-4.672 2.36a.822.822 0 0 1 .379.42c.048.123.046.213.046.225 0 .018 0-.036.052-.2.099-.313.283-.735.505-1.232.206-.463.447-.997.6-1.44a3.38 3.38 0 0 0 .175-.729c.018-.175.059-.741-.401-1.144l-1.319 1.503c-.337-.295-.26-.66-.27-.56a1.607 1.607 0 0 1-.077.281c-.117.339-.312.775-.535 1.275-.208.466-.445 1-.585 1.445-.068.214-.14.488-.145.76-.005.23.039.843.635 1.16l.94-1.765ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
+  							</svg>
+  							61
+  						</button>
+  					</div>
+  					<a href="#" class=" h-9 px-[14px] rounded-full bg-orange flex justify-center items-center gap-[7px] font-averta font-bold text-[14px] text-white outline outline-white tb:hover:bg-[#ff9300] tb:hover:outline-[#ff9300] transition-all duration-500 ease-in-out mt-2 md:mt-0">
+  						Get deal*
+  						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+  							<path class="stroke-white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.636 18.364 18.364 5.636m0 0V15m0-9.364H9"/>
+  						</svg> 
+  					</a>
+  				</div>
+  			</div>
+  
+  		</div>
+  
+  	</section>
+  
+  </main>
+
+<script src="./js/script.js" defer></script>
+
+</body>
+
+</html>
